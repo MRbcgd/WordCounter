@@ -6,7 +6,8 @@ var splitedText=entireText.split(' ');
 var countedWord={};//js object
 //insert splited word into object
 for(var i=0; i<splitedText.length; i++){
-	var word=splitedText[i];
+  //Not distinguish case
+	var word=splitedText[i].toLowerCase();
   //counting word
 	if(countedWord[word]==undefined){
 	    countedWord[word]=1;
